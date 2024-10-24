@@ -1,33 +1,6 @@
 import { useState } from "react";
 import { PlusCircle } from "lucide-react";
-
-const STORIES = [
-  {
-    id: "new",
-    username: "Your Story",
-    avatar:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop&crop=faces",
-    isNew: true,
-  },
-  {
-    id: "1",
-    username: "john_doe",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
-  },
-  {
-    id: "2",
-    username: "travel_lisa",
-    avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces",
-  },
-  {
-    id: "3",
-    username: "photo_mike",
-    avatar:
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=faces",
-  },
-];
+import { STORIES } from "../data/Data";
 
 export function Stories() {
   const [activeStory, setActiveStory] = useState<string | null>(null);
